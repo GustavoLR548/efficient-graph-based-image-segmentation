@@ -10,7 +10,7 @@ int main(int argc, const char *argv[]) {
         imageName = argv[1];
     }
 
-    cv::Mat image = cv::imread(imageName.c_str(), CV_LOAD_IMAGE_COLOR);
+    cv::Mat image = cv::imread(imageName.c_str(), cv::IMREAD_COLOR);
 
     if (image.empty()) {
         cout << "Could not find or open the image" << endl;
